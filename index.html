@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=0.4,maximum-scale=1.0, user-scalable=0">
+    
+    <title>PLAY THE GAME</title>
+    <link rel="stylesheet" type=" text/css" href="style.css"/>
+</head>
+<body>
+    
+    <div id="p1house"></div>      
+    <div id="p2house"></div>        
+    <div id="p3house"></div>
+    
+    <div id="p1cover"></div>      
+    <div id="p2cover"></div>        
+    <div id="p3cover"></div>
+              
+    <div id="p1win"></div>        
+    <div id="p2win"></div>
+    <div id="p3win"></div>
+     
+    <div id="playboard">       
+        <div id="yourhouse"></div>       
+        <div id="player1house"></div>
+        <div id="player2house"></div>
+        <div id="player3house"></div>       
+    </div>
+    
+    <div id="cardbuc">
+        <div class="cardplace" id="cp1"></div>
+        <div class="cardplace" id="cp2"></div>
+        <div class="cardplace" id="cp3"></div>
+        <div class="cardplace" id="cp4"></div>
+        <div class="cardplace" id="cp5"></div>
+        <div class="cardplace" id="cp6"></div>
+        <div class="cardplace" id="cp7"></div>
+        <div class="cardplace" id="cp8"></div>
+        <div class="cardplace" id="cp9"></div>
+        <div class="cardplace" id="cp10"></div>
+        <div class="cardplace" id="cp11"></div>
+        <div class="cardplace" id="cp12"></div>
+        <div class="cardplace" id="cp13"></div>
+        
+         <div id="yourwin"></div>
+          <div id="gameonid" onclick="setf1()">setbid</div>
+    </div>
+    <div id="ccolid"></div>
+    <div id="p11id">
+        <table>
+        <tr>
+            <td>p1 - </td>
+            <td id="now11">0</td>
+            <td>/</td>
+            <td id="fixed11">0</td>
+            
+        </tr>
+        </table>
+    </div>
+    <div id="p22id">
+        <table>
+        <tr>
+            <td id="now22">0</td>
+            <td>/</td>
+            <td id="fixed22">0</td>
+        </tr>
+        <tr>
+            <td>p2</td>
+        </tr>
+        </table>
+    </div>
+    <div id="p33id">
+        <table>
+        <tr>
+            <td id="now33">0</td>
+            <td>/</td>
+            <td id="fixed33">0</td>
+        </tr>
+        <tr>
+            <td>p3</td>
+        </tr>
+        </table>
+    </div>
+    <div id="pyyid">
+        <table>
+        <tr>
+            <td>YOU - </td>
+            <td id="nowy">0</td>
+            <td>/</td>
+            <td id="fixedy">1</td>
+        </tr> 
+           </table>  
+    </div>
+    <div id="ptbut" onclick="tablef1(this)">POINT</div>
+    <div id="massbox">YOUR TURN</div>
+    
+    <div id="backcover"></div>
+    <div id="butrematch" onclick="rematchwork()">NEXT ROUND</div>
+    
+    
+    
+    
+    <div id="setbid" onclick="tablef1(this)">
+        <p id="subid" onclick="bidf(this)">—</p>
+        <p id="bedid">1</p>
+        <p id="addid" onclick="bidf(this)">+</p>
+        <div id="btom" onclick="bidf(this)">BACK</div>
+        <div id="okid" onclick="tablef1(this)">SUBMIT</div>
+    </div>
+    
+    <div id="cdec" onclick="tablef1(this)">TAP TO CLOSE
+    MAIN COLOUR 
+    </div>
+    
+    <div id="ptable">
+        <table id="ptid" style="border:2px solid black;">
+            <thead>
+                <tr>
+                    <th>PLAYER</th>
+                    <th>POINT</th>
+                </tr>
+            </thead>
+            
+            <tbody>
+                <tr>
+                    <td>PLAYER-1</td>
+                    <td id="ap1">0</td>
+                    
+                </tr>
+                <tr>
+                    <td>PLAYER-2</td>
+                    <td id="ap2">0</td>
+                </tr>
+                <tr>
+                    <td>PLAYER-3</td>
+                    <td id="ap3">0</td>
+                </tr>
+                <tr>
+                    <td>YOU</td>
+                    <td id="apy">0</td>
+                </tr>
+            </tbody>
+        </table>
+        <div id="closeid" onclick="tablef1(this)">CLOSE</div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
